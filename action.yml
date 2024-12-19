@@ -1,0 +1,27 @@
+name: 'liteyuki-pypi'
+description: 'Publish your Python package to Liteyuki Registry'
+author: 'LiteyukiStudio'
+
+inputs:
+  owner:
+    description: 'The owner of the repository.'
+    required: true
+  username:
+    description: 'Your Gitea username for authentication.'
+    required: true
+  token:
+    description: 'Your Gitea token for authentication.'
+    required: true
+  endpoint:
+    description: 'The endpoint of the Gitea server.'
+    required: false
+    default: 'https://git.liteyuki.icu/api/packages/{owner}/pypi'
+
+outputs:
+  result:
+    description: 'action-demo'
+
+runs:
+  using: node16
+  main: 'dist/index.js'
+
