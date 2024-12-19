@@ -9,4 +9,5 @@
     username: ${{ secrets.GITEA_USERNAME }}
     token: ${{ secrets.GITEA_TOKEN }}
     endpoint: https://git.liteyuki.icu/api/packages/{owner}/pypi    # This is the default value
+    files: /path/to/files/*   
 ```

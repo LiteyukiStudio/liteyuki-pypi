@@ -12,6 +12,9 @@ inputs:
   token:
     description: 'Your Gitea token for authentication.'
     required: true
+  files:
+    description: 'The files to upload.'
+    required: true
   endpoint:
     description: 'The endpoint of the Gitea server.'
     required: false
